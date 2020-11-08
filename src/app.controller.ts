@@ -17,9 +17,8 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Post('add')
   @MessagePattern('add')
-  async accumulate(data: number[]): Promise<number> {
+  async accumulate(data: number[]) {
     return await this.mathService.accumulate(data)
   }
 }

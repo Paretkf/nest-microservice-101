@@ -3,7 +3,6 @@ import { AppModule } from './app.module';
 import { Logger } from '@nestjs/common';
 import { Transport } from '@nestjs/microservices';
 
-// Create a logger instance
 const logger = new Logger('Main');
 
 // Create the microservice options object
